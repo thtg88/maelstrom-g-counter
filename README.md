@@ -4,7 +4,36 @@ This repo contains a Go implementation of the grow-only counter challenge for th
 
 ## Requirements
 
-- Go 1.20: you can install it using [gvm](https://github.com/moovweb/gvm) with `gvm install go1.20 && gvm use go1.20`
+### Go 1.20
+
+You can install Go 1.20 using [gvm](https://github.com/moovweb/gvm) with:
+
+```bash
+gvm install go1.20
+gvm use go1.20
+```
+
+### Maelstrom
+
+Maelstrom is built in [Clojure](https://clojure.org/) so you'll need to install [OpenJDK](https://openjdk.org/).
+
+It also provides some plotting and graphing utilities which rely on [Graphviz](https://graphviz.org/) & [gnuplot](http://www.gnuplot.info/).
+
+If you're using Homebrew, you can install these with this command:
+
+```bash
+brew install openjdk graphviz gnuplot
+```
+
+You can find more details on the [Prerequisites](https://github.com/jepsen-io/maelstrom/blob/main/doc/01-getting-ready/index.md#prerequisites) section on the Maelstrom docs.
+
+Next, you'll need to download Maelstrom itself.
+
+These challenges have been tested against [Maelstrom 0.2.3](https://github.com/jepsen-io/maelstrom/releases/tag/v0.2.3).
+
+Download the tarball & unpack it.
+
+You can run the maelstrom binary from inside this directory.
 
 ## Build
 
