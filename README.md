@@ -1,6 +1,6 @@
 ## Fly.io Gossip Gloomers Distributed Systems Challenges - Grow-only Counter Challenge
 
-This repo contains a Go implementation of the grow-only counter challenge for the [Fly.io Gossip Glomers](https://fly.io/dist-sys/) series of distributed systems challenges.
+This repo contains a Go implementation of the grow-only counter challenge for the [Fly.io Gossip Gloomers](https://fly.io/dist-sys/) series of distributed systems challenges.
 
 ## Requirements
 
