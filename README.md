@@ -1,6 +1,6 @@
-## Fly.io Gossip Gloomers Distributed Systems Challenges - Broadcast Challenge
+## Fly.io Gossip Gloomers Distributed Systems Challenges - Grow-only Counter Challenge
 
-This repo contains a Go implementation of the grow-only counnter challenge for the [Fly.io Gossip Glomers](https://fly.io/dist-sys/) series of distributed systems challenges.
+This repo contains a Go implementation of the grow-only counter challenge for the [Fly.io Gossip Glomers](https://fly.io/dist-sys/) series of distributed systems challenges.
 
 ## Requirements
 
@@ -16,4 +16,15 @@ go build .
 
 ## Test
 
-To use the different Maelstrom test commands, please refer to the Fly.io [instructions](https://fly.io/dist-sys/4a/).
+To use the different Maelstrom test commands, you can refer to the Fly.io [instructions](https://fly.io/dist-sys/4/), or run:
+
+```bash
+# Make sure to replace `~/go/bin/maelstrom-counter`
+# with the full path of the executable you built above
+./maelstrom test -w g-counter \
+  --bin ~/go/bin/maelstrom-counter \
+  --node-count 3 \
+  --rate 100 \
+  --time-limit 20 \
+  --nemesis partition
+```
